@@ -1,0 +1,168 @@
+body { 
+    margin: 0 auto;
+}
+
+.container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.text-content { 
+    margin: 0 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.card { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eef3f3;
+    height: 35vw;
+    width: 35vw;
+
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.3px);
+-webkit-backdrop-filter: blur(1.3px);
+}
+
+article { 
+    padding: 3em;
+}
+
+article h1 { 
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 4vw;
+    margin-top: 0;
+    margin-bottom: 0.5px;
+}
+
+article p { 
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 1.5vw;
+}
+
+.contact-box { 
+    margin-bottom: 3em;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button { 
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5em 1em 0.5em; 
+    background-color: #ffc171;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    transition: 500ms;
+}
+
+button:hover{ 
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.3px);
+    -webkit-backdrop-filter: blur(1.3px); 
+}
+
+.fa-solid { 
+    padding-right: 10px;
+}
+
+.img-col { 
+    background-image: url(../Devvz/img/medium-shot-happy-friends-city.jpg);
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.img-col img { 
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        margin-top: 5em !important;
+    }
+    article h1 { 
+        font-size: 6vw !important;
+    }
+
+    article p { 
+       font-size: 3.5vw !important; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container { 
+        flex-direction: column;
+        margin-top: 10em !important;
+    }
+    .text-content { 
+        width: 100%;
+        margin: 0;
+    }
+    .card{ 
+        height: 25em !important;
+        width: 25em !important;
+    }
+    button { 
+        margin-bottom: 2em;
+        font-size: 1em !important;
+    }
+    .contact-box { 
+        flex-direction: column;
+        margin-bottom: 0em;
+    }
+    .img-col {
+        width: 100%;
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 992px)  {
+    .card { 
+        height: 50vw;
+        width: 50vw;
+    }
+    article p { 
+        font-size: 2.5vw; 
+     }
+}
+
+@media screen and (max-width: 1200px)  {
+    .container { 
+        flex-direction: column;
+        margin-top: 5em;
+    }
+    .text-content { 
+        margin-bottom: 4em;
+    }
+
+    .card { 
+        height: 50vw;
+        width: 50vw;
+    }
+    button { 
+        font-size: 2vw;
+    }
+}
